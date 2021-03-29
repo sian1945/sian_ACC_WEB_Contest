@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+li,a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size:16px ;
+    color:#edf0f1 ;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#000000 ;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:left ;
+    padding: 32px 10% ;
+    box-sizing: border-box;
+    background-color:#020202 ;
+
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 40px;
+    
+}
+.nav_links li a{
+   transition: all 0.3s ease 0s; 
+
+}
+.nav_links li a:hover{
+    color: #0088a9;
+    background-color: #edf0f1;
+   
+    padding: 25%;
+    border-radius: 50px;
+    color:#000000;
+    
+    text-shadow:2px 2px rgb(233, 228, 228) ;
+    
+    
+
+}
+ #loadpage{
+  font-family: 'Poppins',sans-serif;
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+  background-image: url("loadpage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  
+}
+.loadtext{
+    font-size: 72px;
+    padding-top: 46vh;
+    padding-left: 40vh;
+    
+    color: #e9e6e6;
+
+
+    
+}
+ 
+
+body{
+    background-color: black;
+}
+section{
+    color:white;
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+
+}
+section .content{
+    max-width: 80%;
+
+}
+section .content h2
+{
+    position: relative;
+    margin: 0;
+    padding:0;
+    display: inline-block;
+    font-size: 5em;
+    transition:0.5s ;
+    transform-origin: left;
+    transform:scaleX(1);
+    font-family: 'Anton', sans-serif;
+
+
+}
+section .content h3{
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+}
+section .content p{
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+   
+  }
+  
+ 
+  .gallery1{
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    background-image: url("old.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+   .gallery2{
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    background-image: url("mediaval.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+   .gallery3{
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+    height: 100vh;
+    margin: 3px;
+    background-image: url("modern.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+.container{
+    width:1350px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    
+
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 720px;
+    margin: 0px;
+    overflow: hidden;
+}
+.container .card span{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.95;
+    background-color:#42413e ;
+    z-index: 1;
+    transition: width 0.5s,height 0.5s;
+}
+.container .card:hover span{
+    width: 1600px;
+    height: 1600px;
+
+}
+.container .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container .card .content1 div{
+    padding: 40px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+     
+    transition: 0.2s;
+}
+.container .card:hover .content1 div{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
